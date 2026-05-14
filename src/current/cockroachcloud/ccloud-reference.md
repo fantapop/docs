@@ -135,6 +135,15 @@ blue-dog   041d4c6b-69b9-4121-9c5a-8dd6ffd6b73d  PLAN_DEDICATED   2022-03-22 21:
 ...
 ~~~
 
+Use the `--cloud` flag to filter the list by cloud provider:
+
+{% include_cached copy-clipboard.html %}
+~~~ shell
+ccloud cluster list --cloud GCP
+~~~
+
+Valid values for `--cloud` are `AWS`, `GCP`, and `AZURE`.
+
 ## Get information about a cluster
 
 Use the `ccloud cluster info` command with the cluster name as the parameter to show detailed information about your cluster. Find the **Name** column in the output of [`ccloud cluster list`](#list-clusters-in-an-organization) to find the name of the cluster.
